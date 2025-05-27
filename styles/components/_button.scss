@@ -19,8 +19,6 @@
   user-select: none;
   transition: var(--transition-fast);
 
-  @include focus-visible;
-
   &:disabled {
     opacity: 0.6;
     cursor: not-allowed;
@@ -30,11 +28,7 @@
   &--primary {
     background-color: var(--color-primary);
     color: white;
-
-    @include hover {
-      background-color: var(--color-primary-dark);
-      transform: translateY(-1px);
-    }
+    
   }
 
   &--secondary {
@@ -42,10 +36,6 @@
     color: var(--color-primary);
     border-color: var(--color-primary);
 
-    @include hover {
-      background-color: var(--color-primary);
-      color: white;
-    }
   }
 
   // Sizes

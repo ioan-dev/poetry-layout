@@ -1,6 +1,14 @@
 :root {
+
+  //COLOR
+  --color-dark: #000;
+  --color-gray: #808080;
+  --color-light-gray: #B6B6B6;
+  --color-bg: linear-gradient(180deg, #f6f6f6 100%, #cacaca 100%);
+
   // TYPOGRAPHY
-  --font-primary: 'Montserrat', sans-serif;
+  --font-primary: 'Circe', sans-serif;
+
 
   // Viewport units fix
   --100vw: 100vw;
