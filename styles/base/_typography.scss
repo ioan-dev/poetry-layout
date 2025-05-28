@@ -1,8 +1,14 @@
+@use "../abstracts" as *;
+
 // 1. Глобальные настройки шрифта
+
+html {
+  font-size: 0.833vw;
+}
 
 body {
   font-family: var(--font-primary);
-  font-size: 25px;
+  font-size: rem(25);
   font-weight: 400;
   line-height: 1.2;
   color: var(--color-dark);
@@ -47,19 +53,20 @@ p {
 // 4. Списки
 ul,
 ol {
-  margin: 0 0 1rem 1.5rem;
   padding: 0;
 }
 
 li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
 }
 
 // 5. Ссылки
 a {
   color: var(--color-dark);
-  text-decoration: underline;
+  text-decoration: none;
   transition: color 0.2s;
+  font-size: rem(20);
+  line-height: 1;
 
   &:hover {
     color: var(--color-gray);

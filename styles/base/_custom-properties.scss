@@ -1,3 +1,5 @@
+@use "../abstracts" as *;
+
 :root {
 
   //COLOR
@@ -9,6 +11,11 @@
   // TYPOGRAPHY
   --font-primary: 'Circe', sans-serif;
 
+  // CONTAINER
+  --container-width: 1840px;
+  --container-padding-x: #{
+  rem(10)
+  };
 
   // Viewport units fix
   --100vw: 100vw;
