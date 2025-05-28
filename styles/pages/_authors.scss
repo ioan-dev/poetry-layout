@@ -1,0 +1,11 @@
+@use "../abstracts" as *;
+
+.authors {
+  padding-top: rem(184);
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(115);
+  }
+}

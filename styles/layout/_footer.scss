@@ -4,10 +4,22 @@
   width: 100%;
   position: absolute;
   left: 0;
-  bottom: rem(20);
+  bottom: var(--page-padding-y);
 
   &__inner {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    position: relative;
+  }
+
+  &__item {
+
+    &--center {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+    }
   }
 }

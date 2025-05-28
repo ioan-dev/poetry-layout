@@ -1,0 +1,19 @@
+@use "../abstracts" as *;
+
+.authors {
+  &__list {
+    grid-column: 3 / span 3;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(50);
+  }
+
+  &__name-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(30);
+  }
+}

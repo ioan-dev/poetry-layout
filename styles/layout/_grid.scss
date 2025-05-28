@@ -1,0 +1,8 @@
+@use "../abstracts" as *;
+
+.authors__grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: rem(20);
+}

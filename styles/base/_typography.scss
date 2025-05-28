@@ -73,6 +73,18 @@ a {
   }
 }
 
+// Кнопки
+
+button {
+  font-size: rem(25);
+  line-height: 1;
+  color: var(--color-gray);
+
+  &:hover {
+    color: var(--color-dark);
+  }
+}
+
 // 6. Цитаты
 blockquote {
   margin: 0 0 1rem;

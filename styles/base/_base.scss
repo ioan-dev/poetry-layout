@@ -1,3 +1,13 @@
+
 body {
   background-color: var(--color-bg);
 }
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  transition: color 0.2s;
+}
+
+

@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Title</title>
+    <title>Authors</title>
     <script src="./scripts/main.js" type="module"></script>
     <link rel="stylesheet" href="./styles/main.css">
 </head>
-<body>
+<body class="authors">
 <header class="header">
     <div class="header__inner container">
         <div class="header__logo">
@@ -45,7 +45,7 @@
                     <a href="/" class="nav__link">выпуски</a>
                 </li>
                 <li class="nav__item">
-                    <a href="/authors.html" class="nav__link">авторы</a>
+                    <a href="/" class="nav__link">авторы</a>
                 </li>
                 <li class="nav__item">
                     <a href="/" class="nav__link">выпуски</a>
@@ -65,16 +65,40 @@
         <button class="header__button btn">поиск</button>
     </div>
 </header>
-<div class="hero">
-    <img src="./images/hero_image.png" alt="Изображение" class="hero__image">
-</div>
-<footer class="footer">
-    <div class="footer__inner container">
-        <a href="/" class="footer__item">права и конфиденциальность</a>
-        <a href="/" class="footer__item footer__item--center">последний номер</a>
-        <button class="footer__item btn">язык</button>
+<div class="authors__inner">
+    <ul class="authors-filter">
+        <li class="authors-filter__item">
+            <button class="authors-filter__btn">а</button>
+        </li>
+        <li class="authors-filter__item">
+            <button class="authors-filter__btn">а</button>
+        </li>
+        <li class="authors-filter__item">
+            <button class="authors-filter__btn">а</button>
+        </li>
+        <li class="authors-filter__item">
+            <button class="authors-filter__btn">а</button>
+        </li>
+    </ul>
+    <div class="authors__grid container">
+        <h2 class="title">Авторы</h2>
+        <div class="authors__list">
+            <div class="authors__item">
+                <h3 class="authors__item-title">A</h3>
+                <div class="authors__name-list">
+                    <div class="authors__name-item">
+                        <a href="/" class="authors__link">Баркова Любовь</a>
+                    </div>
+                    <div class="authors__name-item">
+                        <a href="/" class="authors__link">Баркова Любовь</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</footer>
+</div>
+
+
 <div class="noise">
     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
          viewBox="0 0 700 700" width="100%" height="100%"
