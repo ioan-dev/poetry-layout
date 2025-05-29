@@ -216,8 +216,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-primary);
-  font-weight: 600;
-  line-height: 1.25;
+  font-weight: 400;
+  line-height: 1.2;
 }
 
 h1 {
@@ -225,11 +225,11 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 h3 {
-  font-size: 1.75rem;
+  font-size: 2.5rem;
 }
 
 h4 {
@@ -360,16 +360,25 @@ em {
 
 .authors__list {
   grid-column: 3/span 3;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3.125rem;
 }
 .authors__item {
   display: flex;
   flex-direction: column;
   row-gap: 3.125rem;
 }
+.authors__item-title {
+  text-transform: uppercase;
+}
 .authors__name-list {
   display: flex;
   flex-direction: column;
   row-gap: 1.875rem;
+}
+.authors__link {
+  font-size: 1.875rem;
 }
 
 .header {
@@ -392,7 +401,7 @@ em {
 
 .footer {
   width: 100%;
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: var(--page-padding-y);
 }
@@ -435,6 +444,7 @@ em {
 
 .authors {
   padding-top: 11.5rem;
+  padding-bottom: 9.375rem;
 }
 .authors__inner {
   display: flex;

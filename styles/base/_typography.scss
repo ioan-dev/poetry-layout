@@ -17,8 +17,8 @@ body {
 // 2. Заголовки
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-primary);
-  font-weight: 600;
-  line-height: 1.25;
+  font-weight: 400;
+  line-height: 1.2;
 }
 
 h1 {
@@ -26,11 +26,11 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: rem(40);
 }
 
 h3 {
-  font-size: 1.75rem;
+  font-size: rem(40);
 }
 
 h4 {
