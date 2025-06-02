@@ -3,12 +3,19 @@
 // 1. Глобальные настройки шрифта
 
 html {
-  font-size: 0.833vw;
+  //font-size: 0.833vw;
 }
 
+//@include mobile {
+//  html {
+//    font-size: 3.980vw;
+//  }
+//}
+
+
 body {
+  @include fluid-text(25, 15);
   font-family: var(--font-primary);
-  font-size: rem(25);
   font-weight: 400;
   line-height: 1.2;
   color: var(--color-dark);
@@ -26,7 +33,7 @@ h1 {
 }
 
 h2 {
-  font-size: rem(40);
+  @include fluid-text(40, 25);
 }
 
 h3 {
@@ -62,10 +69,11 @@ li {
 
 // 5. Ссылки
 a {
+  @include fluid-text(20, 15);
+
   color: var(--color-dark);
   text-decoration: none;
   transition: color 0.2s;
-  font-size: rem(20);
   line-height: 1;
 
   &:hover {
@@ -76,7 +84,7 @@ a {
 // Кнопки
 
 button {
-  font-size: rem(25);
+  @include fluid-text(25, 20);
   line-height: 1;
   color: var(--color-gray);
 

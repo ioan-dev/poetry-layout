@@ -1,3 +1,4 @@
+@use "constans" as *;
 @use 'sass:math';
 
 @function rem($pixel) {
@@ -8,21 +9,24 @@
   }
 }
 
-@function fluid($max: 100, $min: 10) {
-  $maxViewportWidth: 1600;
-  $minViewportWidth: 390;
+@function fluid($max: 100, $min: 10, $isEndOfLaptop: false) {
+  $maxContainerWidth: $container-desktop-width;
+
+  @if ($isEndOfLaptop) {
+    $minViewportWidth: $container-laptop-width;
+  }
 
   $maxSize: math.div($max, 16);
   $minSize: math.div($min, 16);
-  $maxWidth: math.div($maxViewportWidth, 16);
+  $maxWidth: math.div($maxContainerWidth, 16);
   $minWidth: math.div($minViewportWidth, 16);
 
   $slope: math.div(($maxSize - $minSize), ($maxWidth - $minWidth));
-  $yAxisIntersection: -$minWidth * $slope + $minSize;
+  $yAxisIntersections: -$minWidth * $slope + $minSize;
 
   @return clamp(
           #{$minSize * 1rem},
-          #{$yAxisIntersection * 1rem} + #{$slope * 100vw},
+          #{$yAxisIntersections * 1rem} + #{$slope * 100vw},
           #{$maxSize * 1rem}
   );
 }

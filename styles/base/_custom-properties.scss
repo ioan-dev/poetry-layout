@@ -13,15 +13,19 @@
 
   // CONTAINER
   --container-width: 1840px;
-  --container-padding-x: #{
-  rem(10)
-  };
+  --container-padding-x: 15px;
 
   // SPACING
-  --page-padding-y: #{rem(40)};
+  --page-padding-y: #{fluid(40, 17)};
+  --padding-left-mobile: 33px;
+  --page-padding-top-mobile: 115px;
+  --page-padding-top-desktop: 32.407vh;
+
 
   // Viewport units fix
   --100vw: 100vw;
   --100vh: 100vh;
 }
+
+
 

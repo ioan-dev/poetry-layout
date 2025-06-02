@@ -1,3 +1,5 @@
+@use "../abstracts" as *;
+
 .btn {
   font-family: inherit;
   font-weight: 500;
@@ -19,6 +21,7 @@
   }
 
   // Variants
+
   &--primary {
     background-color: var(--color-primary);
     color: white;
@@ -38,8 +41,7 @@
     font-size: var(--font-size-sm);
   }
 
-  &--lg {
-    padding: var(--space-md) var(--space-xl);
-    font-size: var(--font-size-lg);
+  &--large {
+    @include fluid-text(35, 25)
   }
 }

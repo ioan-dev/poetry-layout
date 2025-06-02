@@ -1,0 +1,27 @@
+@use "../abstracts" as *;
+
+.material {
+  &__grid {
+    row-gap: 55px;
+
+    @include tablet-medium {
+      row-gap: 0;
+    }
+  }
+
+  &__content {
+    grid-column: 1  / span 2;
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(60, 30);
+    padding-left: var(--padding-left-mobile);
+
+    @include tablet-medium {
+      grid-column: 3 / span 3;
+    }
+  }
+
+  &__title {
+    @include fluid-text(40, 20);
+  }
+}

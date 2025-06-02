@@ -7,7 +7,13 @@
   height: 100vh;
 
   &__image {
-    width: rem(744);
-    height: rem(668);
+    width: 42.334vh;
+    height: 38.902vh;
+
+    @include tablet-medium {
+      width: 38.750vw;
+      height: 34.792vw;
+    }
+
   }
 }

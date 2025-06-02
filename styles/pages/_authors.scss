@@ -1,12 +1,22 @@
 @use "../abstracts" as *;
 
 .authors {
-  padding-top: rem(184);
-  padding-bottom: rem(150);
+  padding-top: 17.037vh;
+  padding-bottom: 80px;
+
+  @include tablet-medium {
+    padding-top: 184px;
+    padding-bottom: 150px;
+  }
 
   &__inner {
     display: flex;
     flex-direction: column;
-    row-gap: rem(115);
+    row-gap: 115px;
+  }
+
+
+  &__item-title {
+    @include fluid-text(40, 25);
   }
 }

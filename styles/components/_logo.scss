@@ -1,0 +1,12 @@
+@use "../abstracts" as *;
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: fluid(92, 62);
+
+  @include tablet-medium {
+    width: 100%;
+  }
+}

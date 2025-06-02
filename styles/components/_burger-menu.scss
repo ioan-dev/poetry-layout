@@ -1,0 +1,53 @@
+@use "../abstracts" as *;
+
+.burger-menu {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: var(--color-bg);
+  //padding-top: 19.451vh;
+  z-index: 10;
+
+  @include tablet-medium {
+    display: none;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: var(--page-padding-y);
+    margin-bottom: 19.451vh;
+  }
+
+  &__close {
+    min-width: 18px;
+    min-height: 18px;
+    padding: 10px;
+  }
+
+  &__list {
+    padding-left: var(--padding-left-mobile);
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+  }
+
+  &__link {
+    font-size: 25px;
+  }
+
+  &__bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    bottom: 75px;
+  }
+
+  &--open {
+    display: block;
+  }
+
+}

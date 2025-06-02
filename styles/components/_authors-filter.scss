@@ -1,14 +1,18 @@
 @use "../abstracts" as *;
 
 .authors-filter {
-  display: flex;
+  display: none;
   justify-content: center;
-  column-gap: rem(10);
-  max-width: rem(900);
+  column-gap: 10px;
+  max-width: 900px;
   margin-inline: auto;
+
+  @include tablet-medium {
+    display: flex;
+  }
 
   &__btn {
     text-transform: uppercase;
-    font-size: rem(30);
+    font-size: fluid(30, 20);
   }
 }

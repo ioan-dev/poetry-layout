@@ -1,0 +1,11 @@
+@use "../abstracts" as *;
+
+.material {
+  padding-top: var(--page-padding-top-mobile);
+  padding-bottom: rem(150);
+
+  @include tablet-medium {
+    padding-top: var(--page-padding-top-desktop);
+  }
+  
+}
