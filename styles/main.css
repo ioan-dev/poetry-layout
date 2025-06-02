@@ -420,6 +420,9 @@ em {
   inset: 0;
   background: var(--color-bg);
   z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 @media (width >= 768px) {
   .burger-menu {
@@ -457,6 +460,8 @@ em {
 }
 .burger-menu--open {
   display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
 .logo {
