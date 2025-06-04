@@ -1,3 +1,7 @@
+
+// Указываем размеры контейнеров. Они будут ограничивать изменения масштаба.
 $container-desktop-width: 1840;
-$container-laptop-width: 150;
+$container-laptop-width: 1280;
+
+// Указываем ширину мобильного макета.
 $minViewportWidth: 402;

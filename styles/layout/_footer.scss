@@ -19,6 +19,8 @@
 
   &__item {
 
+    color: var(--color-gray);
+
     &--left {
       display: none;
 
@@ -47,6 +49,10 @@
       @include tablet-medium {
         display: none;
       }
+    }
+
+    &--dark {
+      color: var(--color-dark);
     }
   }
 

@@ -11,9 +11,10 @@
     height: 38.902vh;
 
     @include tablet-medium {
-      width: 38.750vw;
-      height: 34.792vw;
+      //width: 38.750vw;
+      width: calc(var(--index) * 24);
+      height: auto;
+      //height: 34.792vw;
     }
-
   }
 }

@@ -4,9 +4,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: fluid(92, 62);
-
-  @include tablet-medium {
-    width: 100%;
-  }
+  max-width: fluid(95, 62);
+  flex-shrink: 0;
 }

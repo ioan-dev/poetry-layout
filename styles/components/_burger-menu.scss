@@ -4,7 +4,7 @@
   display: none;
   position: fixed;
   inset: 0;
-  background: var(--color-bg);
+  background: var(--color-light-gray);
   //padding-top: 19.451vh;
   z-index: 10;
 
@@ -24,10 +24,15 @@
     margin-bottom: 19.451vh;
   }
 
+  &__logo {
+    align-self: self-start;
+  }
+
+
   &__close {
     min-width: 18px;
     min-height: 18px;
-    padding: 10px;
+    flex-shrink: 0;
   }
 
   &__list {

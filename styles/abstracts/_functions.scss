@@ -9,6 +9,10 @@
   }
 }
 
+
+// Значение плавно изменяется в диапазоне от минимальной ширины макета
+// до максимальной ширины контентного контейнера.
+
 @function fluid($max: 100, $min: 10, $isEndOfLaptop: false) {
   $maxContainerWidth: $container-desktop-width;
 
@@ -29,4 +33,8 @@
           #{$yAxisIntersections * 1rem} + #{$slope * 100vw},
           #{$maxSize * 1rem}
   );
+}
+
+@function fluid-to-laptop($max, $min) {
+  @return fluid($max, $min, true);
 }

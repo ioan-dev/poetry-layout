@@ -19,7 +19,7 @@
     display: none;
 
     @include tablet-medium {
-      display: flex;
+      display: block;
     }
   }
 

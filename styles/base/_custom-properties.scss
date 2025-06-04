@@ -21,10 +21,12 @@
   --page-padding-top-mobile: 115px;
   --page-padding-top-desktop: 32.407vh;
 
-
   // Viewport units fix
   --100vw: 100vw;
   --100vh: 100vh;
+
+  // Utils
+  --index: calc(1vw + 1vh);
 }
 
 
