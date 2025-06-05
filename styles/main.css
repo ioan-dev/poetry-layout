@@ -178,8 +178,8 @@ svg * {
   --color-bg: linear-gradient(180deg, #f6f6f6 100%, #cacaca 100%);
   --font-primary: "Circe", sans-serif;
   --container-width: 1840px;
-  --container-padding-x: 15px;
-  --page-padding-y: clamp(1.0625rem, 0.6606397775rem + 1.5994436718vw, 2.5rem);
+  --container-padding-x: clamp(0.9375rem, 0.8501390821rem + 0.347705146vw, 1.25rem);
+  --page-padding-y: clamp(0.9375rem, 0.8501390821rem + 0.347705146vw, 1.25rem);
   --padding-left-mobile: 33px;
   --page-padding-top-mobile: 115px;
   --page-padding-top-desktop: 32.407vh;
@@ -529,12 +529,7 @@ em {
   width: 100%;
   position: fixed;
   left: 0;
-  bottom: 20px;
-}
-@media (width >= 768px) {
-  .footer {
-    bottom: var(--page-padding-y);
-  }
+  bottom: var(--page-padding-y);
 }
 .footer__inner {
   display: flex;

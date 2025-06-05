@@ -4,11 +4,7 @@
   width: 100%;
   position: fixed;
   left: 0;
-  bottom: 20px;
-
-  @include tablet-medium {
-    bottom: var(--page-padding-y);
-  }
+  bottom: var(--page-padding-y);
 
   &__inner {
     display: flex;
