@@ -1,0 +1,42 @@
+@use "../abstracts" as *;
+
+.about {
+  padding-top: var(--page-padding-top-mobile);
+  padding-bottom: fluid(150, 80);
+
+  @include tablet-medium {
+    padding-top: var(--page-padding-top-desktop);
+  }
+
+  &__body {
+    grid-column: 3 / span 6;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(50, 20);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(50, 20);
+  }
+
+
+  &__item-header {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(20, 5);
+  }
+
+  &__item-title {
+    @include fluid-text(40, 25);
+  }
+
+  &__item-post {
+    @include fluid-text(25, 15);
+    color: var(--color-gray);
+  }
+
+
+}

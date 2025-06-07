@@ -1,0 +1,47 @@
+@use "../abstracts" as *;
+
+.contacts {
+  padding-top: var(--page-padding-top-mobile);
+
+  @include tablet-medium {
+    padding-top: var(--page-padding-top-desktop);
+  }
+
+  &__body {
+    grid-column: 3 / span 3;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(50, 10);
+  }
+
+  &__email {
+    @include fluid-text(40, 20);
+  }
+
+  &__tel {
+    @include fluid-text(30, 15);
+    color: var(--color-gray);
+
+    &:hover {
+      color: var(--color-dark);
+    }
+  }
+
+  &__social-links {
+    display: flex;
+    column-gap: fluid(60, 25);
+  }
+
+  &__social-link {
+    @include fluid-text(20, 15);
+    color: var(--color-gray);
+    text-transform: uppercase;
+
+    &:hover {
+      color: var(--color-dark);
+    }
+  }
+
+
+}

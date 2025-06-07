@@ -27,21 +27,21 @@
                     <a href="/poetry-layout/authors.html" class="nav__link">авторы</a>
                 </li>
                 <li class="nav__item">
-                    <a href="/" class="nav__link">выпуски</a>
+                    <a href="/poetry-layout/releases.html" class="nav__link">выпуски</a>
                 </li>
                 <li class="nav__item">
-                    <a href="/" class="nav__link">о нас</a>
+                    <a href="/poetry-layout/about.html" class="nav__link">о нас</a>
                 </li>
                 <li class="nav__item">
                     <a href="/" class="nav__link">бумага</a>
                 </li>
                 <li class="nav__item">
-                    <a href="/" class="nav__link">контакты</a>
+                    <a href="/poetry-layout/contacts.html" class="nav__link">контакты</a>
                 </li>
 
             </ul>
         </nav>
-        <button class="header__button btn">поиск</button>
+        <button class="header__button btn" data-btn="search">поиск</button>
         <button class="header__burger burger">
             <img src="./icons/burger.svg" alt="burger">
         </button>
@@ -92,14 +92,30 @@
 <div class="hero">
     <img src="./images/hero_image.png" alt="Изображение" class="hero__image">
 </div>
+<!--SEARCH-->
+<div class="search">
+    <div class="search__inner container">
+        <div class="search__header">
+            <input class="search__input" type="search" placeholder="имя автора, название подборки, стихотворение">
+            <button class="search__button btn btn--large">закрыть</button>
+        </div>
+        <!--    <ul class="search__list">-->
+        <!--        <li class="search__item">-->
+        <!--            -->
+        <!--        </li>-->
+        <!--    </ul>-->
+    </div>
+
+</div>
 <!--FOOTER-->
 <footer class="footer">
     <div class="footer__inner container">
         <a href="/" class="footer__item footer__item--left">права и конфиденциальность</a>
         <a href="/" class="footer__item footer__item--center footer__item--dark">последний номер</a>
-        <button class="footer__search btn footer__item--right">поиск</button>
+        <button class="footer__search btn footer__item--right" data-btn="search">поиск</button>
         <button class="footer__item btn">язык</button>
     </div>
 </footer>
+
 </body>
 </html>

@@ -1,0 +1,26 @@
+@use "../abstracts" as *;
+
+.releases {
+  padding-top: var(--page-padding-top-mobile);
+  padding-bottom: fluid(150, 80);
+
+  @include tablet-medium {
+    padding-top: var(--page-padding-top-desktop);
+  }
+
+  &__body {
+    grid-column: 3 / span 4;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(25, 10);
+  }
+
+
+  &__link {
+    @include fluid-text(32, 20);
+  }
+
+}

@@ -89,39 +89,20 @@ document.addEventListener('DOMContentLoaded', () => {
     window.burgerMenu = burgerMenu;
 });
 
-// Альтернативный вариант без классов (более простой)
-/*
 document.addEventListener('DOMContentLoaded', () => {
-  const burgerButton = document.querySelector('.header__burger');
-  const burgerMenu = document.querySelector('.burger-menu');
-  const closeButton = document.querySelector('.burger-menu__close');
-  const menuLinks = document.querySelectorAll('.burger-menu__link');
+    let searchButtons = document.querySelectorAll('[data-btn="search"]');
+    let searchModal = document.querySelector(".search");
+    let searchClose = document.querySelector('.search__button');
 
-  if (!burgerButton || !burgerMenu) return;
+    searchButtons.forEach(searchButton => {
+        searchButton.addEventListener('click', (e) => {
+            searchModal.classList.toggle('is-open');
+        })
+    })
 
-  const openMenu = () => {
-    burgerMenu.classList.add('burger-menu--open');
-    document.body.style.overflow = 'hidden';
-  };
+    searchClose.addEventListener('click', (e) => {
+        searchModal.classList.toggle('is-open');
+    })
 
-  const closeMenu = () => {
-    burgerMenu.classList.remove('burger-menu--open');
-    document.body.style.overflow = '';
-  };
+})
 
-  // События
-  burgerButton.addEventListener('click', openMenu);
-  closeButton?.addEventListener('click', closeMenu);
-
-  menuLinks.forEach(link => {
-    link.addEventListener('click', closeMenu);
-  });
-
-  // Закрытие по Escape
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && burgerMenu.classList.contains('burger-menu--open')) {
-      closeMenu();
-    }
-  });
-});
-*/
