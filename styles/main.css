@@ -595,7 +595,12 @@ em {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100dvh;
+}
+@media (width >= 768px) {
+  .hero {
+    height: 100vh;
+  }
 }
 .hero__image {
   width: 42.334dvh;

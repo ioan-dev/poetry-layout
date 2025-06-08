@@ -4,7 +4,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100dvh;
+
+  @include tablet-medium {
+    height: 100vh;
+  }
 
   &__image {
     width: 42.334dvh;
