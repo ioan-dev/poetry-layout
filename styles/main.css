@@ -592,6 +592,8 @@ em {
 }
 
 .hero {
+  position: absolute;
+  inset: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -599,6 +601,7 @@ em {
 }
 @media (width >= 768px) {
   .hero {
+    position: static;
     height: 100vh;
   }
 }

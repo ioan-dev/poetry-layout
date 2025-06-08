@@ -1,12 +1,15 @@
 @use "../abstracts" as *;
 
 .hero {
+  position: absolute;
+  inset: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100dvh;
 
   @include tablet-medium {
+    position: static;
     height: 100vh;
   }
 
