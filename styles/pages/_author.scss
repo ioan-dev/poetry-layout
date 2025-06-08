@@ -18,7 +18,7 @@
   &__content {
     display: flex;
     flex-direction: column;
-    row-gap: fluid(155, 85);
+    row-gap: fluid(155, 50);
     grid-row: 2 / span 1;
     grid-column: 1 / span 2;
     padding-left: var(--padding-left-mobile);

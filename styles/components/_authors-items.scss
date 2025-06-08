@@ -41,5 +41,9 @@
 
   &__link {
     @include fluid-text(30, 20);
+
+    @include less-laptop-large {
+      font-size: fluid(25, 20);
+    }
   }
 }

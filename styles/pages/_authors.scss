@@ -18,5 +18,9 @@
 
   &__item-title {
     @include fluid-text(40, 25);
+
+    @include less-laptop-large {
+      font-size: fluid(35, 20);
+    }
   }
 }

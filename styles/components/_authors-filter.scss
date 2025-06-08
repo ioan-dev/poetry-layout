@@ -14,5 +14,9 @@
   &__btn {
     text-transform: uppercase;
     font-size: fluid(30, 20);
+
+    @include less-laptop-large {
+      font-size: fluid(25, 20);
+    }
   }
 }
