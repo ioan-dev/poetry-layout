@@ -42,6 +42,10 @@
   }
 
   &--large {
-    @include fluid-text(35, 25)
+    @include fluid-text(35, 25);
+
+    @include tablet-medium {
+      @include fluid-text(30, 25);
+    }
   }
 }

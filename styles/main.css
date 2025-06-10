@@ -182,7 +182,7 @@ svg * {
   --page-padding-y: clamp(0.9375rem, 0.8501390821rem + 0.347705146vw, 1.25rem);
   --padding-left-mobile: 33px;
   --page-padding-top-mobile: 115px;
-  --page-padding-top-desktop: 32.407vh;
+  --page-padding-top-desktop: 335px;
   --100vw: 100vw;
   --100vh: 100vh;
   --index: calc(1vw + 1vh);
@@ -385,6 +385,11 @@ em {
 }
 .btn--large {
   font-size: clamp(1.5625rem, 1.3877781641rem + 0.6954102921vw, 2.1875rem);
+}
+@media (width >= 768px) {
+  .btn--large {
+    font-size: clamp(1.5625rem, 1.4751390821rem + 0.347705146vw, 1.875rem);
+  }
 }
 
 .authors-filter {
@@ -670,7 +675,7 @@ em {
 }
 @media (width >= 768px) {
   .authors {
-    padding-top: 184px;
+    padding-top: 190px;
     padding-bottom: 150px;
   }
 }
@@ -783,7 +788,7 @@ em {
   column-gap: clamp(1.5625rem, 1.1256954103rem + 1.7385257302vw, 3.125rem);
 }
 .search__input {
-  padding-block: clamp(0.625rem, 0.5376390821rem + 0.347705146vw, 0.9375rem);
+  padding-block: 0;
   flex-grow: 1;
   border: none;
   border-bottom: 1px solid var(--color-gray);
@@ -830,11 +835,13 @@ em {
   display: flex;
   flex-direction: column;
   row-gap: clamp(0.625rem, -0.0738873435rem + 2.7816411683vw, 3.125rem);
+  padding-left: var(--padding-left-mobile);
 }
 @media (width >= 768px) {
   .contacts__body {
     grid-column: 3/span 3;
     grid-row: 1/span 1;
+    padding-left: 0;
   }
 }
 .contacts__email {
@@ -886,11 +893,13 @@ em {
   display: flex;
   flex-direction: column;
   row-gap: clamp(1.25rem, 0.7258344924rem + 2.0862308762vw, 3.125rem);
+  padding-left: var(--padding-left-mobile);
 }
 @media (width >= 768px) {
   .about__body {
     grid-column: 3/span 6;
     grid-row: 1/span 1;
+    padding-left: 0;
   }
 }
 .about__item {
@@ -904,7 +913,12 @@ em {
   row-gap: clamp(0.3125rem, 0.0504172462rem + 1.0431154381vw, 1.25rem);
 }
 .about__item-title {
-  font-size: clamp(1.5625rem, 1.3004172462rem + 1.0431154381vw, 2.5rem);
+  font-size: clamp(1.5625rem, 1.3703059805rem + 0.7649513213vw, 2.25rem);
+}
+@media (width >= 768px) {
+  .about__item-title {
+    font-size: clamp(1.5625rem, 1.4751390821rem + 0.347705146vw, 1.875rem);
+  }
 }
 .about__item-post {
   font-size: clamp(0.9375rem, 0.7627781641rem + 0.6954102921vw, 1.5625rem);
